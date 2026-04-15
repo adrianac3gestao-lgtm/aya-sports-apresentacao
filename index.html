@@ -43,6 +43,7 @@
         .footer { position: absolute; bottom: 20px; width: calc(100% - 100px); display: flex; justify-content: space-between; font-size: 0.8em; color: #718096; border-top: 1px solid #e2e8f0; padding-top: 10px; }
         .footer-brand { font-weight: bold; color: var(--primary-color); }
         .negrito { font-weight: bold; }
+        .total-col { background-color: #ebf4ff; font-weight: bold; }
         .obs-box { background: #fff; border-left: 5px solid var(--secondary-color); padding: 15px; margin-top: 15px; font-size: 0.85em; }
     </style>
 </head>
@@ -160,19 +161,45 @@
         </div>
         <h1>5. Fechamento Final de Saldos Devedores</h1>
         <table>
-            <tr><th>Componente da Dívida</th><th>Agrega</th><th>Yoshimoto</th></tr>
-            <tr><td>Participação no Déficit de Obra (CAPEX)</td><td>R$ 582.804,62</td><td>R$ 194.268,21</td></tr>
-            <tr><td>Participação no Suporte Operacional (OPEX)</td><td>R$ 176.713,59</td><td>R$ 176.713,59</td></tr>
-            <tr><td>Reembolso Vetor (Consolidado)</td><td>R$ 123.704,01</td><td>R$ 58.291,42</td></tr>
-            <tr><td>Diferença Aporte Mensal (Custeio 2024)</td><td>-</td><td>R$ 59.999,34</td></tr>
+            <tr>
+                <th>Componente da Dívida</th>
+                <th>Agrega</th>
+                <th>Yoshimoto</th>
+                <th class="total-col">TOTAL</th>
+            </tr>
+            <tr>
+                <td>Participação no Déficit de Obra (CAPEX)</td>
+                <td>R$ 582.804,62</td>
+                <td>R$ 194.268,21</td>
+                <td class="total-col">R$ 777.072,83</td>
+            </tr>
+            <tr>
+                <td>Participação no Suporte Operacional (OPEX)</td>
+                <td>R$ 176.713,59</td>
+                <td>R$ 176.713,59</td>
+                <td class="total-col">R$ 353.427,18</td>
+            </tr>
+            <tr>
+                <td>Reembolso Vetor (Consolidado)</td>
+                <td>R$ 123.704,01</td>
+                <td>R$ 58.291,42</td>
+                <td class="total-col">R$ 181.995,43</td>
+            </tr>
+            <tr>
+                <td>Diferença Aporte Mensal (Custeio 2024)</td>
+                <td>-</td>
+                <td>R$ 59.999,34</td>
+                <td class="total-col">R$ 59.999,34</td>
+            </tr>
             <tr style="background: #1a365d; color: white; font-size: 1.1em; font-weight: bold;">
                 <td>SALDO DEVEDOR TOTAL ACUMULADO</td>
                 <td>R$ 883.222,21</td>
                 <td>R$ 489.272,55</td>
+                <td style="background: #2c5282;">R$ 1.372.494,76</td>
             </tr>
         </table>
         <p style="font-size: 0.75em; margin-top: 15px; color: #4a5568;">
-            *Consolidação referente aos exercícios de 2023 e 2024.
+            *Consolidação técnica referente aos exercícios de 2023 e 2024.
         </p>
         <div class="footer"><span>Conclusão e Acerto de Contas</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
@@ -186,18 +213,18 @@
         
         <div class="obs-box">
             <strong style="color: var(--secondary-color);">I. Verificação de Saldo Operacional (Grupo Yoshimoto)</strong><br>
-            A apuração financeira reflete o período encerrado em <strong>31/12/2024</strong>. Cabe aos sócios verificar se o saldo devedor apontado para o Grupo Yoshimoto (referente ao suporte operacional) foi total ou parcialmente liquidado através de aportes realizados ao longo do ano de <strong>2025</strong>.
+            A apuração financeira reflete o período encerrado em 31/12/2024. Cabe aos sócios verificar se o saldo devedor operacional apontado para o Grupo Yoshimoto foi liquidado através de aportes realizados ao longo de 2025.
         </div>
 
         <div class="obs-box">
-            <strong style="color: var(--secondary-color);">II. Ativos da Vetor (Orientações do Sócio Valdecir - 17/09/2024)</strong><br>
-            Conforme pontuado pelo sócio <strong>Valdecir</strong>, existem materiais instalados na AYA que são de propriedade da <strong>Vetor</strong> (não faturados para a AYA). Os sócios devem validar como tratar estes itens:
+            <strong style="color: var(--secondary-color);">II. Ativos da Vetor (Orientações Sócio Valdecir - 17/09/2024)</strong><br>
+            Conforme orientado pelo sócio <strong>Valdecir</strong>, existem materiais instalados na AYA que pertencem à Vetor e não foram adquiridos pela AYA. Os sócios devem validar a tratativa para:
             <ul style="margin-top: 8px; font-size: 0.9em; line-height: 1.3;">
                 <li>Gerador 170kva, Catracas de entrada e Ar-condicionado (Espaço Corporativo);</li>
                 <li>Armários, mesas, cadeiras diversas, lixeiras e racks de informática.</li>
             </ul>
-            <p style="margin-top: 5px; font-style: italic; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 5px;">
-                "Só uma locação mensal de um gerador varia de R$ 3.000,00 a R$ 5.000,00 e não inclui o combustível e manutenção."
+            <p style="margin-top: 5px; font-style: italic; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 5px; color: #4a5568;">
+                “Existem materiais hoje instalados na Aya que pertencem a Vetor e não foram comprados pela AYA... Só uma locação mensal de um gerador varia de R$ 3.000,00 a R$ 5.000,00 e não inclui o combustível e manutenção.”
             </p>
         </div>
 
