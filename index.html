@@ -31,28 +31,18 @@
             height: 60px;
         }
         .logo-img { height: 60px; width: auto; object-fit: contain; }
-        
         .capa { justify-content: center; align-items: center; text-align: center; }
         .logo-c3-grande { font-size: 3.5em; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
         .subtitulo-c3 { font-size: 1.4em; color: var(--secondary-color); letter-spacing: 3px; margin-bottom: 40px; }
-        
         h1 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; font-size: 1.6em; margin-top: 0; }
-        h2 { color: var(--secondary-color); font-size: 1.3em; margin-top: 10px; }
-        
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; font-size: 0.85em; }
-        th, td { border: 1px solid #cbd5e0; padding: 10px; text-align: left; }
+        h3 { color: var(--secondary-color); font-size: 1.1em; margin-bottom: 10px; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; font-size: 0.82em; }
+        th, td { border: 1px solid #cbd5e0; padding: 8px 12px; text-align: left; }
         th { background-color: var(--primary-color); color: white; }
         tr:nth-child(even) { background-color: #f8fafc; }
-        
         .highlight { color: var(--accent-color); font-weight: bold; }
-        .footer { 
-            position: absolute; bottom: 20px; width: calc(100% - 100px);
-            display: flex; justify-content: space-between; align-items: center;
-            border-top: 1px solid #e2e8f0; padding-top: 10px;
-            font-size: 0.8em; color: #718096;
-        }
+        .footer { position: absolute; bottom: 20px; width: calc(100% - 100px); display: flex; justify-content: space-between; font-size: 0.8em; color: #718096; border-top: 1px solid #e2e8f0; padding-top: 10px; }
         .footer-brand { font-weight: bold; color: var(--primary-color); }
-        ul { line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -61,12 +51,9 @@
         <div class="logo-c3-grande">C3 GESTÃO</div>
         <div class="subtitulo-c3">CONSULTORIA & AUDITORIA</div>
         <div style="width: 100px; height: 5px; background: var(--accent-color); margin-bottom: 40px;"></div>
-        <h1 style="border: none; font-size: 2.2em; margin-bottom: 10px;">Relatório de Encerramento e Apuração Financeira</h1>
-        <h2 style="margin-bottom: 40px;">AYA Sports (2023-2024)</h2>
-        <div class="footer">
-            <span>Março, 2026</span>
-            <span class="footer-brand">C3 GESTÃO</span>
-        </div>
+        <h1>Relatório de Encerramento e Apuração Financeira</h1>
+        <h2 style="color: var(--secondary-color); font-size: 1.3em;">AYA Sports (2023-2024)</h2>
+        <div class="footer"><span>Março, 2026</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
 
     <div class="slide">
@@ -74,53 +61,45 @@
             <img src="LOGO_C3_01-1.png" class="logo-img">
             <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
         </div>
-        <h1>Metodologia e Auditoria</h1>
-        <p>Processo de saneamento e conciliação financeira baseado em evidências:</p>
-        <ul>
-            <li><strong>Rastreabilidade Total:</strong> ID único para cada lançamento nos extratos Itaú.</li>
-            <li><strong>Cruzamento de Dados:</strong> Validação entre Extratos, ERP Evolution e Comprovantes.</li>
-            <li><strong>Saneamento:</strong> Identificação e exclusão de duplicidades e pagamentos sem lastro.</li>
-            <li><strong>Digitalização:</strong> Organização de todo o acervo documental no OneDrive.</li>
-        </ul>
-        <div class="footer">
-            <span>Metodologia Aplicada</span>
-            <span class="footer-brand">C3 GESTÃO</span>
-        </div>
-    </div>
-
-    <div class="slide">
-        <div class="header-logos">
-            <img src="LOGO_C3_01-1.png" class="logo-img">
-            <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
-        </div>
-        <h1>Aportes Iniciais dos Sócios</h1>
-        <p>Investimento para viabilização do projeto (Fase de Implantação):</p>
+        <h1>1. Aportes Iniciais e Confronto CAPEX</h1>
+        
+        <h3>Aportes Realizados (Integralização Inicial)</h3>
         <table>
-            <tr>
-                <th>Grupo / Sócio</th>
-                <th>Participação</th>
-                <th>Valor Aportado</th>
+            <tr><th>Grupo / Sócio</th><th>Participação</th><th>Valor Integralizado</th></tr>
+            <tr><td>Grupo Agrega (75%)</td><td>Sueli/Eliane/Valdecir/Alberto</td><td>R$ 2.250.000,00</td></tr>
+            <tr><td>Grupo Yoshimoto (25%)</td><td>Francis/Viviane/Claudio/Adriana/Rodrigo</td><td>R$ 750.001,34</td></tr>
+            <tr style="background: #edf2f7; font-weight: bold;"><td>TOTAL APORTADO</td><td>100%</td><td>R$ 3.000.001,34</td></tr>
+        </table>
+
+        <h3>Resumo de Investimento em Obra (CAPEX)</h3>
+        <p style="font-size: 0.85em; margin: 0;">Comparativo entre o capital disponível e o custo real de implantação:</p>
+        <table>
+            <tr><th>Descrição do Fluxo</th><th>Valor Total</th></tr>
+            <tr><td>Gasto Real em Obras/Infraestrutura (CAPEX)</td><td>R$ 3.777.074,16</td></tr>
+            <tr><td>Total de Aportes Iniciais dos Sócios</td><td>R$ 3.000.001,34</td></tr>
+            <tr style="background: #fff5f5; font-weight: bold;">
+                <td style="color: var(--accent-color);">DÉFICIT DE INVESTIMENTO (A Cobertura por Empréstimo)</td>
+                <td class="highlight">R$ 777.072,82</td>
             </tr>
-            <tr>
-                <td><strong>Grupo Agrega</strong> (75%)</td>
-                <td>Sueli, Eliane, Valdecir, Alberto</td>
-                <td>R$ 2.250.000,00</td>
-            </tr>
-            <tr>
-                <td><strong>Grupo Yoshimoto</strong> (25%)</td>
-                <td>Francis, Viviane, Claudio, Adriana, Rodrigo</td>
-                <td>R$ 750.001,34</td>
-            </tr>
+        </table>
+        <div class="footer"><span>Aportes vs Investimento Real</span><span class="footer-brand">C3 GESTÃO</span></div>
+    </div>
+
+    <div class="slide">
+        <div class="header-logos">
+            <img src="LOGO_C3_01-1.png" class="logo-img">
+            <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
+        </div>
+        <h1>2. Rateio do Déficit de Obra (CAPEX)</h1>
+        <p style="font-size: 0.9em;">Distribuição da responsabilidade sobre o excedente da obra (Regra 75/25):</p>
+        <table>
+            <tr><th>Grupo</th><th>Critério de Rateio</th><th>Valor da Responsabilidade</th></tr>
+            <tr><td>Grupo Agrega</td><td>75%</td><td>R$ 582.804,62</td></tr>
+            <tr><td>Grupo Yoshimoto</td><td>25%</td><td>R$ 194.268,21</td></tr>
             <tr style="background: #edf2f7; font-weight: bold;">
-                <td>TOTAL DOS APORTES</td>
-                <td>100%</td>
-                <td>R$ 3.000.001,34</td>
-            </tr>
+                <td>TOTAL DO DÉFICIT</td><td>100%</td><td>R$ 777.072,82</td></tr>
         </table>
-        <div class="footer">
-            <span>Aportes 2023-2024</span>
-            <span class="footer-brand">C3 GESTÃO</span>
-        </div>
+        <div class="footer"><span>Análise de Responsabilidade CAPEX</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
 
     <div class="slide">
@@ -128,34 +107,31 @@
             <img src="LOGO_C3_01-1.png" class="logo-img">
             <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
         </div>
-        <h1>Empréstimo Agrega ao Grupo</h1>
-        <p>Recursos injetados para suprir o déficit de investimento e suporte operacional:</p>
+        <h1>3. Capital de Giro e Operação (OPEX)</h1>
         <table>
-            <tr>
-                <th>Destinação do Recurso</th>
-                <th>Valor</th>
-                <th>Regra de Rateio</th>
-            </tr>
-            <tr>
-                <td>Cobertura de Déficit CAPEX (Obra)</td>
-                <td>R$ 777.072,82</td>
-                <td>75% Agrega / 25% Yoshimoto</td>
-            </tr>
-            <tr>
-                <td>Aporte Operacional (OPEX)</td>
-                <td>R$ 353.427,18</td>
-                <td>50% Agrega / 50% Yoshimoto</td>
-            </tr>
+            <tr><th>Item Operacional</th><th>Valor Total</th><th>Agrega (50%)</th><th>Yoshimoto (50%)</th></tr>
+            <tr><td>Capital de Giro (Matriz/Filial)</td><td>R$ 300.000,00</td><td>R$ 150.000,00</td><td>R$ 150.000,00</td></tr>
+            <tr><td>Custo Operacional Mensal (2024)</td><td>R$ 510.000,66</td><td>R$ 285.000,00</td><td>R$ 225.000,66</td></tr>
+            <tr><td>Suporte Empréstimo OPEX</td><td>R$ 353.427,18</td><td>R$ 176.713,59</td><td>R$ 176.713,59</td></tr>
+        </table>
+        <div class="footer"><span>Análise Operacional</span><span class="footer-brand">C3 GESTÃO</span></div>
+    </div>
+
+    <div class="slide">
+        <div class="header-logos">
+            <img src="LOGO_C3_01-1.png" class="logo-img">
+            <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
+        </div>
+        <h1>4. Consolidação do Empréstimo Agrega</h1>
+        <p style="font-size: 0.9em;">Total de R$ 1.130.500,00 injetado para sustentar Obra e Operação:</p>
+        <table>
+            <tr><th>Destinação</th><th>Valor Total</th><th>Parte Agrega</th><th>Parte Yoshimoto</th></tr>
+            <tr><td>Cobertura Déficit Obra (75/25)</td><td>R$ 777.072,82</td><td>R$ 582.804,62</td><td>R$ 194.268,21</td></tr>
+            <tr><td>Suporte Operação (50/50)</td><td>R$ 353.427,18</td><td>R$ 176.713,59</td><td>R$ 176.713,59</td></tr>
             <tr style="background: #edf2f7; font-weight: bold;">
-                <td>TOTAL DO EMPRÉSTIMO</td>
-                <td>R$ 1.130.500,00</td>
-                <td>-</td>
-            </tr>
+                <td>TOTAL EMPRÉSTIMO</td><td>R$ 1.130.500,00</td><td>R$ 759.518,21</td><td>R$ 370.981,80</td></tr>
         </table>
-        <div class="footer">
-            <span>Injeção de Capital - Agrega</span>
-            <span class="footer-brand">C3 GESTÃO</span>
-        </div>
+        <div class="footer"><span>Gestão de Recursos Externos</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
 
     <div class="slide">
@@ -163,76 +139,21 @@
             <img src="LOGO_C3_01-1.png" class="logo-img">
             <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
         </div>
-        <h1>Capital de Giro e Paridade Operacional</h1>
+        <h1>5. Fechamento Final de Saldos Devedores</h1>
         <table>
-            <tr>
-                <th>Indicador</th>
-                <th>Grupo Agrega</th>
-                <th>Grupo Yoshimoto</th>
-            </tr>
-            <tr>
-                <td>Capital de Giro (Aporte Fixado)</td>
-                <td>R$ 150.000,00</td>
-                <td>R$ 150.000,00</td>
-            </tr>
-            <tr>
-                <td>Aporte Mensal (Custo Operacional)</td>
-                <td>R$ 285.000,00</td>
-                <td>R$ 225.000,66</td>
-            </tr>
-            <tr style="font-weight: bold;">
-                <td>TOTAL APORTADO EM 2024</td>
-                <td>R$ 435.000,00</td>
-                <td>R$ 375.000,66</td>
-            </tr>
-            <tr>
-                <td>Diferença de Participação</td>
-                <td>-</td>
-                <td class="highlight">R$ 59.999,34 (Aportado a menor)</td>
-            </tr>
+            <tr><th>Componente da Dívida</th><th>Agrega</th><th>Yoshimoto</th></tr>
+            <tr><td>Participação no Déficit de Obra (CAPEX)</td><td>R$ 582.804,62</td><td>R$ 194.268,21</td></tr>
+            <tr><td>Participação no Suporte Operacional (OPEX)</td><td>R$ 176.713,59</td><td>R$ 176.713,59</td></tr>
+            <tr><td>Pendente de Reembolso (Vetor)</td><td>R$ 130.825,18</td><td>R$ 51.170,24</td></tr>
+            <tr><td>Diferença Aporte Mensal (Custeio)</td><td>-</td><td>R$ 59.999,34</td></tr>
+            <tr><td>Ajustes de Rateio Adicionais</td><td>- R$ 7.121,18</td><td>R$ 7.121,17</td></tr>
+            <tr style="background: #1a365d; color: white; font-size: 1.1em; font-weight: bold;">
+                <td>SALDO DEVEDOR TOTAL ACUMULADO</td><td>R$ 883.222,21</td><td>R$ 489.272,55</td></tr>
         </table>
-        <div class="footer">
-            <span>Análise de Fluxo Operacional</span>
-            <span class="footer-brand">C3 GESTÃO</span>
-        </div>
-    </div>
-
-    <div class="slide">
-        <div class="header-logos">
-            <img src="LOGO_C3_01-1.png" class="logo-img">
-            <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
-        </div>
-        <h1>Fechamento: Apuração Final de Saldos</h1>
-        <p>Consolidação das pendências e saldos devedores apurados para acerto entre as partes:</p>
-        <table>
-            <tr>
-                <th>Descrição do Saldo</th>
-                <th>Grupo Agrega</th>
-                <th>Grupo Yoshimoto</th>
-            </tr>
-            <tr>
-                <td>Pendente de Reembolso (Vetor)</td>
-                <td>R$ 130.825,18</td>
-                <td>R$ 51.170,24</td>
-            </tr>
-            <tr>
-                <td>Diferença Aporte Mensal (2024)</td>
-                <td>-</td>
-                <td class="highlight">R$ 59.999,34</td>
-            </tr>
-            <tr style="background: #1a365d; color: white; font-weight: bold;">
-                <td>SALDO DEVEDOR TOTAL ACUMULADO</td>
-                <td>R$ 883.222,21</td>
-                <td>R$ 489.272,55</td>
-            </tr>
-        </table>
-        <p style="font-size: 0.85em; margin-top: 15px; color: #4a5568;">
-            Nota: Os saldos refletem as validações técnicas e reclassificações aplicadas sobre o fluxo de caixa 2023-2024.
+        <p style="font-size: 0.75em; margin-top: 10px; color: #4a5568;">
+            *Nota: Os saldos refletem a apuração final após conciliação integral de 2023-2024.
         </p>
-        <div class="footer">
-            <span>Conclusão da Auditoria</span>
-            <span class="footer-brand">C3 GESTÃO</span>
-        </div>
+        <div class="footer"><span>Conclusão e Acerto de Contas</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
 
 </body>
