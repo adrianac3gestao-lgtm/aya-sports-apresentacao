@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         .slide { 
             background: var(--bg-color); 
             width: 900px; height: 650px; 
-            margin: 0 auto 40px auto; padding: 50px; 
+            margin: 0 auto 40px auto; padding: 40px 50px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             position: relative;
             overflow: hidden;
@@ -23,125 +23,156 @@
             flex-direction: column;
             border-radius: 8px;
         }
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo-placeholder { font-weight: bold; color: var(--primary-color); font-size: 1.2em; }
+        
         .capa { justify-content: center; align-items: center; text-align: center; }
-        .logo-c3-grande { font-size: 2.5em; font-weight: bold; color: var(--primary-color); margin-bottom: 10px; }
-        .subtitulo-c3 { font-size: 1.2em; color: var(--secondary-color); letter-spacing: 2px; margin-bottom: 60px; }
+        .logo-c3-grande { font-size: 3em; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
+        .subtitulo-c3 { font-size: 1.3em; color: var(--secondary-color); letter-spacing: 3px; margin-bottom: 40px; }
         
-        h1 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; font-size: 1.8em; }
-        h2 { color: var(--secondary-color); font-size: 1.4em; }
+        h1 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; font-size: 1.6em; margin-top: 0; }
+        h2 { color: var(--secondary-color); font-size: 1.3em; margin-top: 10px; }
         
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
-        th, td { border: 1px solid #cbd5e0; padding: 12px; text-align: left; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; font-size: 0.85em; }
+        th, td { border: 1px solid #cbd5e0; padding: 10px; text-align: left; }
         th { background-color: var(--primary-color); color: white; }
+        tr:nth-child(even) { background-color: #f8fafc; }
         
         .highlight { color: var(--accent-color); font-weight: bold; }
         .footer { 
             position: absolute; bottom: 20px; width: calc(100% - 100px);
             display: flex; justify-content: space-between; align-items: center;
             border-top: 1px solid #e2e8f0; padding-top: 10px;
-            font-size: 0.85em; color: #718096;
+            font-size: 0.8em; color: #718096;
         }
         .footer-brand { font-weight: bold; color: var(--primary-color); }
-        ul { line-height: 1.8; color: var(--text-color); }
-        
-        @media print {
-            body { background: white; padding: 0; }
-            .slide { box-shadow: none; margin: 0; page-break-after: always; }
-        }
     </style>
 </head>
 <body>
 
     <div class="slide capa">
         <div class="logo-c3-grande">C3 GESTÃO</div>
-        <div class="subtitulo-c3">CONSULTORIA & ESTRATÉGIA</div>
-        
-        <div style="width: 60px; height: 3px; background: var(--accent-color); margin-bottom: 40px;"></div>
-        
+        <div class="subtitulo-c3">CONSULTORIA & AUDITORIA</div>
+        <div style="width: 80px; height: 4px; background: var(--accent-color); margin-bottom: 40px;"></div>
         <h1 style="border: none; font-size: 2.2em; margin-bottom: 10px;">Relatório de Encerramento e Apuração Financeira</h1>
-        <h2 style="margin-bottom: 40px;">Projeto: AYA Sports (2023-2024)</h2>
-        
-        <p style="color: #718096;">Apresentação de Auditoria e Conciliação Final</p>
+        <h2 style="margin-bottom: 40px;">AYA Sports (2023-2024)</h2>
         <div class="footer">
-            <span>Março, 2026</span>
+            <span>16 de Março, 2026</span>
             <span class="footer-brand">C3 GESTÃO</span>
         </div>
     </div>
 
     <div class="slide">
-        <h1>Metodologia e Auditoria</h1>
-        <ul>
-            <li><strong>Rastreabilidade Total:</strong> Cada lançamento bancário (Itaú) recebeu um código ID único[cite: 199].</li>
-            <li><strong>Conciliação de Despesas:</strong> Cruzamento entre extratos bancários e o ERP Evolution[cite: 205].</li>
-            <li><strong>Validação Documental:</strong> Conferência física de notas fiscais, recibos e endereços de entrega[cite: 220, 224].</li>
-            <li><strong>Transparência:</strong> Materiais organizados no OneDrive para garantir fácil navegação e histórico[cite: 226, 227].</li>
-        </ul>
-        <div class="footer">
-            <span>Metodologia de Trabalho</span>
-            <span class="footer-brand">C3 GESTÃO</span>
+        <div class="header-logos">
+            <span class="logo-placeholder">C3 GESTÃO</span>
+            <span class="logo-placeholder">AYA SPORTS</span>
         </div>
-    </div>
-
-    <div class="slide">
-        <h1>Critérios de Rateio Societário</h1>
-        <p>As despesas foram segregadas para assegurar a responsabilidade proporcional de cada parte:</p>
+        <h1>Detalhamento de Aportes dos Sócios</h1>
+        <p>Investimento total inicial para viabilização do projeto (Fase de Construção).</p>
         <table>
             <tr>
-                <th>Natureza do Gasto</th>
-                <th>Definição Técnica</th>
-                <th>Rateio (Agrega / Yoshimoto)</th>
+                <th>Grupo / Sócio</th>
+                <th>Participação</th>
+                <th>Valor Aportado</th>
             </tr>
             <tr>
-                <td><strong>CAPEX (Investimento)</strong></td>
-                <td>Obras, infraestrutura e implantação[cite: 293, 309].</td>
-                <td><strong>75% / 25%</strong></td>
+                <td>Agrega (Sueli, Eliane, Valdecir, Alberto)</td>
+                <td>75%</td>
+                <td>R$ 2.250.000,00</td>
             </tr>
             <tr>
-                <td><strong>OPEX (Operação)</strong></td>
-                <td>Manutenção, custos fixos e funcionamento[cite: 294, 311].</td>
-                <td><strong>50% / 50%</strong></td>
+                <td>Yoshimoto (Francis, Viviane, Claudio, Adriana, Rodrigo)</td>
+                <td>25%</td>
+                <td>R$ 750.001,34</td>
+            </tr>
+            <tr style="background: #edf2f7; font-weight: bold;">
+                <td>TOTAL APORTADO (SÓCIOS)</td>
+                <td>100%</td>
+                <td>R$ 3.000.001,34</td>
             </tr>
         </table>
         <div class="footer">
-            <span>Critérios de Rateio</span>
+            <span>Memória de Cálculo - Aportes</span>
             <span class="footer-brand">C3 GESTÃO</span>
         </div>
     </div>
 
     <div class="slide">
-        <h1>Resumo Executivo de Saldos</h1>
+        <div class="header-logos">
+            <span class="logo-placeholder">C3 GESTÃO</span>
+            <span class="logo-placeholder">AYA SPORTS</span>
+        </div>
+        <h1>Empréstimo Agrega à AYA Sports</h1>
+        <p>Recursos complementares injetados para suprir o déficit entre o aporte inicial e o custo real da obra (CAPEX) e suporte operacional (OPEX).</p>
         <table>
             <tr>
-                <th>Marcador Financeiro</th>
-                <th>Grupo Agrega</th>
-                <th>Grupo Yoshimoto</th>
+                <th>Destinação do Recurso</th>
+                <th>Valor</th>
+                <th>Critério de Rateio</th>
             </tr>
             <tr>
-                <td>Aporte Direto de Sócios</td>
-                <td>R$ 2.250.000,00</td>
-                <td>R$ 750.001,34</td>
+                <td>Cobertura de Déficit CAPEX (Obra)</td>
+                <td>R$ 777.072,82</td>
+                <td>75% Agrega / 25% Yoshimoto</td>
             </tr>
             <tr>
-                <td>Custo Operacional (Aporte Mensal)</td>
+                <td>Suporte à Operação (OPEX)</td>
+                <td>R$ 353.427,18</td>
+                <td>50% Agrega / 50% Yoshimoto</td>
+            </tr>
+            <tr style="background: #edf2f7; font-weight: bold;">
+                <td>TOTAL EMPRÉSTIMO</td>
+                <td>R$ 1.130.500,00</td>
+                <td>Conforme natureza do gasto</td>
+            </tr>
+        </table>
+        <div class="footer">
+            <span>Análise de Crédito e Empréstimo</span>
+            <span class="footer-brand">C3 GESTÃO</span>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="header-logos">
+            <span class="logo-placeholder">C3 GESTÃO</span>
+            <span class="logo-placeholder">AYA SPORTS</span>
+        </div>
+        <h1>Capital de Giro e Aporte Mensal</h1>
+        <p>Análise da paridade no custeio operacional (Rateio 50/50).</p>
+        <table>
+            <tr>
+                <th>Indicador Operacional</th>
+                <th>Agrega</th>
+                <th>Yoshimoto</th>
+            </tr>
+            <tr>
+                <td>Capital de Giro (Matriz/Filial)</td>
+                <td>R$ 150.000,00</td>
+                <td>R$ 150.000,00</td>
+            </tr>
+            <tr>
+                <td>Aporte Mensal (Custo Operacional)</td>
                 <td>R$ 285.000,00</td>
                 <td>R$ 225.000,66</td>
             </tr>
-            <tr>
-                <td>Diferença (Aportado a Menor)</td>
-                <td>-</td>
-                <td class="highlight">R$ 59.999,34</td>
+            <tr style="font-weight: bold;">
+                <td>TOTAL APORTADO EM 2024</td>
+                <td>R$ 435.000,00</td>
+                <td>R$ 375.000,66</td>
             </tr>
-            <tr style="background: #edf2f7;">
-                <td><strong>SALDO DEVEDOR TOTAL</strong></td>
-                <td><strong>R$ 883.222,21</strong></td>
-                <td><strong>R$ 489.272,55</strong></td>
+            <tr>
+                <td>Diferença de Participação</td>
+                <td>-</td>
+                <td class="highlight">R$ 59.999,34 (Aportado a menor)</td>
             </tr>
         </table>
-        <p style="font-size: 0.85em; margin-top: 20px; color: #4a5568;">
-            *O déficit de investimento (CAPEX) de R$ 777.072,82 foi suprido por empréstimo da Agrega[cite: 321, 322].
-        </p>
         <div class="footer">
-            <span>Apuração Final de Saldos</span>
+            <span>Equilíbrio Operacional</span>
             <span class="footer-brand">C3 GESTÃO</span>
         </div>
     </div>
