@@ -14,7 +14,7 @@
         body { font-family: 'Segoe UI', sans-serif; background: #e2e8f0; margin: 0; padding: 20px; }
         .slide { 
             background: var(--bg-color); 
-            width: 900px; height: 650px; 
+            width: 900px; height: 720px; 
             margin: 0 auto 40px auto; padding: 40px 50px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             position: relative;
@@ -37,15 +37,16 @@
         h1 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; font-size: 1.5em; margin-top: 0; }
         h3 { color: var(--secondary-color); font-size: 1.1em; margin-bottom: 10px; margin-top: 15px; }
         table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; font-size: 0.78em; }
-        th, td { border: 1px solid #cbd5e0; padding: 8px 12px; text-align: left; }
-        th { background-color: var(--primary-color); color: white; }
+        th, td { border: 1px solid #cbd5e0; padding: 8px 12px; text-align: right; }
+        th { background-color: var(--primary-color); color: white; text-align: center; }
+        td:first-child { text-align: left; }
         tr:nth-child(even) { background-color: #f8fafc; }
         .footer { position: absolute; bottom: 20px; width: calc(100% - 100px); display: flex; justify-content: space-between; font-size: 0.8em; color: #718096; border-top: 1px solid #e2e8f0; padding-top: 10px; }
         .footer-brand { font-weight: bold; color: var(--primary-color); }
-        .negrito { font-weight: bold; }
         .total-col { background-color: #ebf4ff; font-weight: bold; }
         .obs-box { background: #fff; border-left: 5px solid var(--secondary-color); padding: 15px; margin-top: 15px; font-size: 0.85em; }
         .badge-sanado { background: #c6f6d5; color: #22543d; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; font-weight: bold; }
+        .destaque-valor { color: var(--accent-color); font-weight: bold; }
     </style>
 </head>
 <body>
@@ -126,7 +127,7 @@
                     <td>R$ 25.585,12</td>
                     <td>R$ 25.585,12</td>
                 </tr>
-                <tr class="negrito" style="background: #edf2f7; font-size: 1.05em;">
+                <tr style="background: #edf2f7; font-weight: bold; font-size: 1.05em;">
                     <td>SUBTOTAL VETOR</td>
                     <td>R$ 181.995,42</td>
                     <td>R$ 123.704,01</td>
@@ -142,7 +143,7 @@
             <img src="LOGO_C3_01-1.png" class="logo-img">
             <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
         </div>
-        <h1>4. Fechamento de Saldos Devedores (Ciclo 2024)</h1>
+        <h1>4. Fechamento de Saldos Devedores (Acerto de Contas)</h1>
         <table>
             <tr>
                 <th>Componente da Dívida</th>
@@ -169,20 +170,25 @@
                 <td class="total-col">R$ 181.995,43</td>
             </tr>
             <tr style="background: #1a365d; color: white; font-size: 1.1em; font-weight: bold;">
-                <td>SALDO DEVEDOR FINAL CONSOLIDADO</td>
+                <td>SALDO DEVEDOR CONSOLIDADO (A APURAR)</td>
                 <td>R$ 883.222,22</td>
                 <td>R$ 429.273,22</td>
                 <td style="background: #2c5282;">R$ 1.312.495,44</td>
             </tr>
-            <tr style="color: #718096; font-style: italic;">
+        </table>
+
+        <h3 style="margin-top: 20px; color: #718096;">Histórico de Regularização (Não compõe o saldo acima)</h3>
+        <table>
+            <tr style="color: #718096; font-style: italic; background-color: #fcfcfc;">
                 <td>Aporte Mensal (Diferença 2024)</td>
                 <td>-</td>
                 <td>R$ 59.999,34</td>
-                <td class="total-col">Sanado em 2025 <span class="badge-sanado">OK</span></td>
+                <td style="text-align: center; font-weight: bold; color: #2f855a;">QUITADO EM 2025 <span class="badge-sanado">OK</span></td>
             </tr>
         </table>
-        <div class="obs-box" style="font-size: 0.75em; border-left-color: #48bb78;">
-            <strong>Nota Técnica (28/04/2026):</strong> A diferença de aporte do Grupo Yoshimoto identificada no fechamento de 2024 foi reportada pelos sócios como <strong>regularizada ao longo do exercício de 2025</strong>, não compondo o passivo atual para fins de acerto de contas.
+
+        <div class="obs-box" style="font-size: 0.78em; border-left-color: #48bb78;">
+            <strong>Nota Técnica (28/04/2026):</strong> Conforme alinhamento, o valor de <strong>R$ 59.999,34</strong> (referente ao déficit de aporte Yoshimoto em 2024) foi reportado como <strong>integralmente quitado</strong> ao longo do ano de 2025. Portanto, este valor foi segregado e não integra o montante de acerto de contas atual.
         </div>
         <div class="footer"><span>Consolidação de Saldos</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
@@ -192,25 +198,30 @@
             <img src="LOGO_C3_01-1.png" class="logo-img">
             <img src="LOGO_AYA.png" class="logo-img" alt="AYA SPORTS">
         </div>
-        <h1>5. Regularização de Ativos e Diretrizes (Sócio Valdecir)</h1>
+        <h1>5. Observações e Pontos de Verificação</h1>
         
         <div class="obs-box">
-            <strong style="color: var(--secondary-color);">I. Inventário de Ativos Vetor em Posse da AYA</strong><br>
-            Conforme reportado em 17/09/2024, ativos de propriedade da <strong>Vetor</strong> estão instalados na AYA sem faturamento prévio. Esta vacância patrimonial requer validação para evitar passivos de locação:
-            <ul style="margin-top: 5px; font-size: 0.85em; line-height: 1.3;">
-                <li><strong>Gerador 170kva:</strong> Custo de locação estimado entre R$ 3k e R$ 5k/mês.</li>
-                <li><strong>Infraestrutura:</strong> Catracas de entrada e Ar-condicionado do corporativo.</li>
-                <li><strong>Mobiliário:</strong> Armários, mesas, cadeiras e racks de TI.</li>
+            <strong style="color: var(--secondary-color);">I. Recomposição de Capital (Valor Presente)</strong><br>
+            A auditoria recomenda considerar a atualização dos valores pelo índice de <strong>100% do CDI</strong> pro rata temporis. 
+            Esta medida visa a recomposição do valor real do capital investido fora do contrato original, garantindo o equilíbrio financeiro entre as partes até a data da liquidação.
+        </div>
+
+        <div class="obs-box">
+            <strong style="color: var(--secondary-color);">II. Ativos Vetor em Posse da AYA</strong><br>
+            Ratificamos a necessidade de regularização dos ativos listados pelo sócio Valdecir (Gerador, TI e Mobiliário). 
+            A manutenção destes ativos sem a devida compra ou contrato de locação gera um passivo oculto estimado entre <strong>R$ 3.000,00 e R$ 5.000,00 mensais</strong> (referência locação de gerador).
+        </div>
+
+        <div class="obs-box" style="border-left-color: #2c5282;">
+            <strong style="color: var(--secondary-color);">III. Diretrizes para Decisão Societária</strong><br>
+            <ul style="margin-top: 5px; font-size: 0.95em; line-height: 1.4;">
+                <li>Validação definitiva dos aportes excedentes realizados pelo Grupo Agrega;</li>
+                <li>Definição de cronograma para reembolso dos valores devidos à Vetor;</li>
+                <li>Formalização da compra ou devolução da infraestrutura física (Ativos Vetor).</li>
             </ul>
         </div>
 
-        <div class="obs-box">
-            <strong style="color: var(--secondary-color);">II. Proposta de Conciliação</strong><br>
-            Com o avançar da auditoria, outros valores de dívida da AYA para com a Vetor poderão surgir. 
-            A recomendação estratégica é realizar a <strong>validação dos aportes excedentes da Agrega</strong> e decidir formalmente sobre a compra ou devolução dos ativos listados para estancar custos indiretos de locação.
-        </div>
-
-        <div class="footer"><span>Diretrizes Estratégicas</span><span class="footer-brand">C3 GESTÃO</span></div>
+        <div class="footer"><span>Pontos de Verificação Auditoria</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
 
 </body>
