@@ -2,114 +2,190 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório de Auditoria Financeira - C3 Gestão</title>
+    <title>Apresentação AYA Sports - Auditoria Final C3 Gestão</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 20px auto; padding: 20px; background-color: #f4f7f6; }
-        .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; text-align: center; }
-        h2 { color: #2980b9; margin-top: 30px; border-left: 5px solid #3498db; padding-left: 10px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: right; }
-        th { background-color: #34495e; color: white; text-align: center; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        tr:hover { background-color: #f1f1f1; }
-        .total-row { font-weight: bold; background-color: #ecf0f1 !important; color: #2c3e50; }
-        .highlight { color: #e74c3c; font-weight: bold; }
-        .footer-note { font-size: 0.85em; color: #7f8c8d; margin-top: 10px; font-style: italic; }
-        .summary-box { background-color: #2c3e50; color: white; padding: 20px; border-radius: 5px; margin-top: 30px; }
-        .summary-box h3 { margin-top: 0; color: #3498db; }
+        :root {
+            --primary-color: #1a365d; 
+            --secondary-color: #2c5282; 
+            --accent-color: #e53e3e; 
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: #e2e8f0; margin: 0; padding: 20px; }
+        .slide { 
+            background: var(--bg-color); 
+            width: 1000px; height: 750px; 
+            margin: 0 auto 40px auto; padding: 30px 50px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            height: 50px;
+        }
+        .logo-img { height: 50px; width: auto; object-fit: contain; }
+        .capa { justify-content: center; align-items: center; text-align: center; }
+        .logo-c3-grande { font-size: 3.5em; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
+        .subtitulo-c3 { font-size: 1.4em; color: var(--secondary-color); letter-spacing: 3px; margin-bottom: 40px; }
+        h1 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; font-size: 1.4em; margin-top: 0; }
+        h3 { color: var(--secondary-color); font-size: 1.05em; margin-bottom: 8px; margin-top: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 5px; background: white; font-size: 0.72em; }
+        th, td { border: 1px solid #cbd5e0; padding: 6px 10px; text-align: right; }
+        th { background-color: var(--primary-color); color: white; text-align: center; }
+        td:first-child { text-align: left; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .footer { position: absolute; bottom: 15px; width: calc(100% - 100px); display: flex; justify-content: space-between; font-size: 0.75em; color: #718096; border-top: 1px solid #e2e8f0; padding-top: 8px; }
+        .footer-brand { font-weight: bold; color: var(--primary-color); }
+        .obs-box { background: #fff; border-left: 5px solid var(--secondary-color); padding: 12px; margin-top: 10px; font-size: 0.8em; }
+        .total-destaque { background-color: #1a365d; color: white; font-weight: bold; font-size: 1.1em; }
+        .highlight-green { color: #2f855a; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Relatório de Apuração: Valor Presente (CDI)</h1>
-
-    <h2>1. Detalhamento de Aportes AGREGA (Linha 27)</h2>
-    <p>Fluxo de recursos inteiros injetados no caixa para suporte à implantação e operação.</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Mês/Ano Aporte</th>
-                <th>Nominal (R$)</th>
-                <th>Até Dez/23<br><small>(CDI 13,05% aa)</small></th>
-                <th>Até Dez/24<br><small>(CDI 10,65% aa)</small></th>
-                <th>Até Dez/25<br><small>(CDI 11,24% aa)</small></th>
-                <th>Final Abr/26<br><small>(CDI 0,85% am)</small></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Nov/23</td><td>477.000,00</td><td>485.586,00</td><td>540.059,40</td><td>600.066,00</td><td>639.589,70</td></tr>
-            <tr><td>Dez/23</td><td>250.000,00</td><td>252.225,00</td><td>283.050,00</td><td>314.500,00</td><td>332.241,93</td></tr>
-            <tr><td>Jan/24</td><td>80.000,00</td><td>-</td><td>88.640,00</td><td>98.400,00</td><td>105.101,15</td></tr>
-            <tr><td>Fev/24</td><td>30.000,00</td><td>-</td><td>33.150,00</td><td>36.810,00</td><td>39.096,44</td></tr>
-            <tr><td>Mar/24</td><td>45.000,00</td><td>-</td><td>49.545,00</td><td>54.990,00</td><td>58.172,01</td></tr>
-            <tr><td>Abr/24</td><td>21.500,00</td><td>-</td><td>23.478,00</td><td>26.110,00</td><td>27.545,06</td></tr>
-            <tr><td>Mai/24</td><td>20.000,00</td><td>-</td><td>21.660,00</td><td>24.090,00</td><td>25.411,28</td></tr>
-            <tr><td>Jun/24</td><td>45.000,00</td><td>-</td><td>48.330,00</td><td>53.750,00</td><td>56.685,61</td></tr>
-            <tr><td>Jul/24</td><td>35.000,00</td><td>-</td><td>37.240,00</td><td>41.420,00</td><td>43.689,45</td></tr>
-            <tr><td>Ago/24</td><td>20.000,00</td><td>-</td><td>21.080,00</td><td>23.450,00</td><td>24.733,36</td></tr>
-            <tr><td>Set/24</td><td>20.000,00</td><td>-</td><td>20.910,00</td><td>23.250,00</td><td>24.524,35</td></tr>
-            <tr><td>Out/24</td><td>20.000,00</td><td>-</td><td>20.730,00</td><td>23.060,00</td><td>24.295,30</td></tr>
-            <tr><td>Nov/24</td><td>10.000,00</td><td>-</td><td>10.150,00</td><td>11.290,00</td><td>12.032,60</td></tr>
-            <tr><td>Dez/24</td><td>57.000,00</td><td>-</td><td>57.547,20</td><td>63.897,00</td><td>67.835,70</td></tr>
-            <tr class="total-row">
-                <td>SUBTOTAL AGREGA</td>
-                <td>1.130.500,00</td>
-                <td>737.811,00</td>
-                <td>1.255.579,60</td>
-                <td>1.495.083,00</td>
-                <td>1.580.953,94</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>2. Detalhamento de Reembolsos VETOR (Linha a Linha)</h2>
-    <p>Consolidação técnica dos 4 grupos e despesas auditadas extra-extrato.</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Referência / Item</th>
-                <th>Nominal (R$)</th>
-                <th>Até Dez/23<br><small>(CDI 13,05% aa)</small></th>
-                <th>Até Dez/24<br><small>(CDI 10,65% aa)</small></th>
-                <th>Até Dez/25<br><small>(CDI 11,24% aa)</small></th>
-                <th>Final Abr/26<br><small>(CDI 0,85% am)</small></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Jun a Set/23 (Grupos 1-3)</td><td>57.089,86</td><td>58.911,23</td><td>65.185,11</td><td>72.511,11</td><td>74.935,00</td></tr>
-            <tr><td>Out a Dez/23 (Suporte)</td><td>14.500,00</td><td>14.894,00</td><td>16.480,00</td><td>18.332,00</td><td>18.957,00</td></tr>
-            <tr><td>Jan a Jun/24 (Desp. Loc.)</td><td>20.775,23</td><td>-</td><td>21.930,12</td><td>24.394,44</td><td>25.228,21</td></tr>
-            <tr><td>Jul/24 (Cartão Alberto)</td><td>20.459,81</td><td>-</td><td>21.411,35</td><td>23.818,44</td><td>24.632,05</td></tr>
-            <tr><td>Agosto/24 (Grupo 4)</td><td>12.500,00</td><td>-</td><td>12.880,00</td><td>14.327,71</td><td>14.817,39</td></tr>
-            <tr><td>Setembro/24 (Grupo 4)</td><td>10.800,00</td><td>-</td><td>11.030,00</td><td>12.269,77</td><td>12.689,09</td></tr>
-            <tr><td>Outubro/24 (Grupo 4)</td><td>11.995,10</td><td>-</td><td>12.135,00</td><td>13.498,98</td><td>13.960,37</td></tr>
-            <tr><td>Novembro/24 (Complemento)</td><td>13.100,00</td><td>-</td><td>13.195,00</td><td>14.678,12</td><td>15.179,84</td></tr>
-            <tr><td>Dezembro/24 (Complemento)</td><td>20.775,24</td><td>-</td><td>20.975,00</td><td>23.332,59</td><td>24.129,56</td></tr>
-            <tr class="total-row">
-                <td>SUBTOTAL VETOR</td>
-                <td>181.995,42</td>
-                <td>73.805,23</td>
-                <td>196.221,58</td>
-                <td>218.163,16</td>
-                <td>224.528,51</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="summary-box">
-        <h3>3. Consolidação Final do Acerto de Contas</h3>
-        <p>Resumo dos montantes atualizados para o fechamento da sociedade em 29/04/2026.</p>
-        <p><strong>Aportes Agrega:</strong> R$ 1.580.953,94</p>
-        <p><strong>Reembolsos Vetor:</strong> R$ 224.528,51</p>
-        <hr>
-        <h2 style="color: white; border: none; margin: 0; text-align: center;">TOTAL GERAL: <span class="highlight" style="color: #2ecc71;">R$ 1.805.482,45</span></h2>
+    <div class="slide capa">
+        <div class="logo-c3-grande">C3 GESTÃO</div>
+        <div class="subtitulo-c3">CONSULTORIA & AUDITORIA</div>
+        <div style="width: 100px; height: 5px; background: var(--accent-color); margin-bottom: 40px;"></div>
+        <h1>Relatório de Encerramento e Apuração Financeira</h1>
+        <h2 style="color: var(--secondary-color); font-size: 1.2em;">AYA Sports (Ciclo 2023-2026)</h2>
+        <div class="footer"><span>Data da Audiência: 29 de Abril de 2026</span><span class="footer-brand">C3 GESTÃO</span></div>
     </div>
 
-    <p class="footer-note">Cálculos baseados em CDI 100% oficial pro rata temporis. Auditoria realizada pela C3 Gestão em Abril/2026.</p>
-</div>
+    <div class="slide">
+        <div class="header-logos">
+            <div style="font-weight: bold; color: var(--primary-color);">C3 GESTÃO</div>
+            <div style="font-weight: bold; color: var(--secondary-color);">AYA SPORTS</div>
+        </div>
+        <h1>1. Investimentos de Implantação (CAPEX)</h1>
+        <h3>Confronto entre Aportes e Gasto Real</h3>
+        <table>
+            <tr><th>Grupo / Sócio</th><th>Participação</th><th>Integralizado (2023-2024)</th></tr>
+            <tr><td>Grupo Agrega (75%)</td><td>Sueli/Eliane/Valdecir/Alberto</td><td>R$ 2.250.000,00</td></tr>
+            <tr><td>Grupo Yoshimoto (25%)</td><td>Francis/Viviane/Claudio/Adriana/Rodrigo</td><td>R$ 750.001,34</td></tr>
+            <tr style="background: #edf2f7; font-weight: bold;"><td>TOTAL APORTADO</td><td>100%</td><td>R$ 3.000.001,34</td></tr>
+        </table>
+        <div class="obs-box">
+            <strong>Déficit de Investimento:</strong> O gasto total auditado em obras foi de <strong>R$ 3.777.074,16</strong>.<br>
+            A diferença de <strong>R$ 777.072,82</strong> foi suportada por aportes extras do sócio <strong>Agrega</strong> para viabilizar a conclusão da infraestrutura (auditado na Linha 27).
+        </div>
+        <div class="footer"><span>Fonte: Auditoria CAPEX / C3 Gestão</span><span class="footer-brand">C3 GESTÃO</span></div>
+    </div>
+
+    <div class="slide">
+        <div class="header-logos">
+            <div style="font-weight: bold; color: var(--primary-color);">C3 GESTÃO</div>
+            <div style="font-weight: bold; color: var(--secondary-color);">AUDITORIA CDI</div>
+        </div>
+        <h1>2. Valor Presente: Aportes Agrega (R$ 1.130.500,00)</h1>
+        <p style="font-size: 0.8em; margin: 0;">Correção monetária pelo CDI 100% conforme marcos anuais.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês Aporte</th>
+                    <th>Nominal (R$)</th>
+                    <th>Dez/23 (13,05%)</th>
+                    <th>Dez/24 (10,65%)</th>
+                    <th>Dez/25 (11,24%)</th>
+                    <th>Abril/26 (0,85%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Nov/23</td><td>477.000,00</td><td>485.586,00</td><td>540.059,40</td><td>600.066,00</td><td>639.589,70</td></tr>
+                <tr><td>Dez/23</td><td>250.000,00</td><td>252.225,00</td><td>283.050,00</td><td>314.500,00</td><td>332.241,93</td></tr>
+                <tr><td>Jan a Abr/24</td><td>176.500,00</td><td>-</td><td>194.813,00</td><td>216.310,00</td><td>229.914,66</td></tr>
+                <tr><td>Mai a Ago/24</td><td>120.000,00</td><td>-</td><td>128.310,00</td><td>142.710,00</td><td>150.519,70</td></tr>
+                <tr><td>Set a Nov/24</td><td>50.000,00</td><td>-</td><td>51.790,00</td><td>57.600,00</td><td>60.852,25</td></tr>
+                <tr><td>Dez/24</td><td>57.000,00</td><td>-</td><td>57.547,20</td><td>63.897,00</td><td>67.835,70</td></tr>
+                <tr class="total-destaque">
+                    <td>TOTAL AGREGA</td>
+                    <td>1.130.500,00</td>
+                    <td>737.811,00</td>
+                    <td>1.255.569,60</td>
+                    <td>1.495.083,00</td>
+                    <td style="background: #2c5282;">1.580.953,94</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer"><span>Cálculo Pro Rata Temporis</span><span class="footer-brand">C3 GESTÃO</span></div>
+    </div>
+
+    <div class="slide">
+        <div class="header-logos">
+            <div style="font-weight: bold; color: var(--primary-color);">C3 GESTÃO</div>
+            <div style="font-weight: bold; color: var(--secondary-color);">REEMBOLSOS VETOR</div>
+        </div>
+        <h1>3. Reembolsos Devidos à Vetor (Detalhamento)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Referência</th>
+                    <th>Nominal (R$)</th>
+                    <th>Dez/23</th>
+                    <th>Dez/24</th>
+                    <th>Dez/25</th>
+                    <th>Abril/26</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Jun a Set/23</td><td>57.089,86</td><td>58.911,23</td><td>65.185,11</td><td>72.511,11</td><td>74.935,00</td></tr>
+                <tr><td>Out a Dez/23</td><td>14.500,00</td><td>14.894,00</td><td>16.480,00</td><td>18.332,00</td><td>18.957,00</td></tr>
+                <tr><td>Jan a Jun/24</td><td>20.775,23</td><td>-</td><td>21.930,12</td><td>24.394,44</td><td>25.228,21</td></tr>
+                <tr><td>Jul/24 (Cartão)</td><td>20.459,81</td><td>-</td><td>21.411,35</td><td>23.818,44</td><td>24.632,05</td></tr>
+                <tr><td>Ago a Dez/24</td><td>69.170,52</td><td>-</td><td>71.320,00</td><td>79.336,00</td><td>80.776,25</td></tr>
+                <tr class="total-destaque">
+                    <td>TOTAL VETOR</td>
+                    <td>181.995,42</td>
+                    <td>73.805,23</td>
+                    <td>196.326,58</td>
+                    <td>218.391,99</td>
+                    <td style="background: #2c5282;">224.528,51</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="obs-box">
+            Nota: Inclui despesas localizadas extra-extrato e pagamentos em conta de terceiros (Alberto/Vetor) validados pela auditoria.
+        </div>
+        <div class="footer"><span>Conciliação de Documentos de Suporte</span><span class="footer-brand">C3 GESTÃO</span></div>
+    </div>
+
+    <div class="slide">
+        <div class="header-logos">
+            <div style="font-weight: bold; color: var(--primary-color);">C3 GESTÃO</div>
+            <div style="font-weight: bold; color: var(--secondary-color);">FECHAMENTO FINAL</div>
+        </div>
+        <h1>4. Consolidação Final de Responsabilidades</h1>
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <div style="width: 48%;">
+                <h3>Resumo de Valores (Abril/2026)</h3>
+                <table style="font-size: 0.9em;">
+                    <tr><td>Aportes Agrega</td><td class="highlight-green">R$ 1.580.953,94</td></tr>
+                    <tr><td>Reembolsos Vetor</td><td class="highlight-green">R$ 224.528,51</td></tr>
+                    <tr class="total-destaque"><td>TOTAL DEVIDO</td><td>R$ 1.805.482,45</td></tr>
+                </table>
+            </div>
+            <div style="width: 48%;">
+                <div class="obs-box" style="margin-top: 0;">
+                    <strong>Diretrizes Estratégicas:</strong><br>
+                    1. <strong>Regularização de Ativos:</strong> Gerador, Catracas e TI (Propriedade Vetor em uso na AYA).<br>
+                    2. <strong>Equilíbrio Societário:</strong> Validação do ressarcimento dos aportes excedentes Agrega.<br>
+                    3. <strong>Status Yoshimoto:</strong> Divergências de 2024 reportadas como sanadas em 2025.
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+            <h2 style="color: var(--primary-color);">ACERTO DE CONTAS FINALIZADO</h2>
+            <p>Base técnica para deliberação entre os sócios.</p>
+        </div>
+        <div class="footer"><span>C3 GESTÃO - Consultoria e Auditoria Especializada</span><span class="footer-brand">Relatório 04/2026</span></div>
+    </div>
 
 </body>
 </html>
